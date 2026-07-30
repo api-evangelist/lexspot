@@ -1,7 +1,31 @@
 aid: lexspot
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lexspot.png
 name: LexSpot
-description: LexSpot is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'LexSpot is a company surfaced as a portfolio company of 500 Global and
+  added to the API Evangelist network as a stub awaiting enrichment. An enrichment
+  pass on 2026-07-19 could not verify any public product, developer, or API surface
+  for the company. The registrable domain lexspot.com is registered (created 2011-10-16,
+  Cloudflare DNS) and carries live Google Workspace mail records, but the apex has
+  no A record and www.lexspot.com fails behind Cloudflare (HTTP 530 / error 1016, origin
+  DNS failure), so no website, documentation, or API could be read. Probes of the
+  well-known discovery surface, llms.txt, npm, PyPI, and GitHub (org and repository
+  search) all returned nothing. The bridge.legal URL previously
+  recorded on this profile was found to redirect to boundless.com (Boundless Immigration),
+  an unrelated company that makes no reference to LexSpot or Bridge Legal; that pointer
+  has been corrected. This record is retained as an unverified lead: no API artifacts
+  have been generated because there is no published specification or documentation
+  to ground them in, and nothing has been fabricated.'
 url: https://raw.githubusercontent.com/api-evangelist/lexspot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +33,18 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-verification-status: unverified-no-public-surface
+x-verified-date: '2026-07-19'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Stub
+- Portfolio
+- 500 Global
+- Unverified
+- Lead
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +53,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://bridge.legal
+  url: https://www.lexspot.com
+- type: DomainSecurity
+  url: security/lexspot-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
