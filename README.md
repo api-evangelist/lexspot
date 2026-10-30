@@ -64,21 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-LexSpot is a company surfaced as a portfolio company of 500 Global and added to the API Evangelist network as a stub awaiting enrichment.
+LexSpot is a company surfaced as a portfolio company of 500 Global and added to the API Evangelist network as a stub awaiting enrichment. An enrichment pass on 2026-07-19 could not verify any public product, developer, or API surface for the company. The registrable domain lexspot.com is registered (created 2011-10-16, Cloudflare DNS) and carries live Google Workspace mail records, but the apex has no A record and www.lexspot.com fails behind Cloudflare (HTTP 530 / error 1016, origin DNS failure), so no website, documentation, or API could be read. Probes of the well-known discovery surface, llms.txt, npm, PyPI, and GitHub (org and repository search) all returned nothing. The bridge.legal URL previously recorded on this profile was found to redirect to boundless.com (Boundless Immigration), an unrelated company that makes no reference to LexSpot or Bridge Legal; that pointer has been corrected. This record is retained as an unverified lead: no API artifacts have been generated because there is no published specification or documentation to ground them in, and nothing has been fabricated.
 
-An enrichment pass on 2026-07-19 could not verify any public product, developer, or API surface for this company. It remains an **unverified lead**.
+**Areas:** Company · Portfolio · 500 Global · Unverified · Leads
 
-## Verification notes (2026-07-19)
+## LexSpot on APIs.io
 
-- **Corrected website.** The profile previously recorded `https://bridge.legal`. That domain now redirects to `https://www.boundless.com/` (Boundless Immigration), an unrelated company whose site makes no reference to LexSpot or Bridge Legal. The pointer has been corrected to the company's own domain.
-- **lexspot.com is registered but not serving.** Created 2011-10-16, Cloudflare registrar and DNS. The apex has no `A` record; `www.lexspot.com` resolves to Cloudflare but returns **HTTP 530 (error 1016, origin DNS failure)** — there is no reachable web origin.
-- **Mail is live.** Google Workspace `MX` records and an `SPF` record (`_spf.google.com`, `spf.mtasv.net`, `mailgun.org`) are published, so the domain is still held and configured.
-- **No developer surface found.** `/.well-known/security.txt`, `/.well-known/openid-configuration`, `/.well-known/oauth-authorization-server`, `/.well-known/api-catalog`, `/.well-known/ai-plugin.json`, and `/llms.txt` were all unreachable. No package on npm or PyPI, no `lexspot` GitHub organization, and no matching repositories in GitHub search.
+Everything profiled for LexSpot is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lexspot/](https://apis.io/providers/lexspot/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+### Published properties
 
-- `security/lexspot-domain-security.yml` — probed TLS/DNS posture (`type: DomainSecurity`).
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-No API, specification, or documentation artifacts have been generated: there is no published specification or documentation to ground them in, and nothing has been fabricated.
+#### Security (1)
 
-Backed by: 500 Global
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lexspot Domain Security](https://apis.io/security/lexspot/lexspot-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.lexspot.com)
+
+## API Evangelist rating
+
+**Kin Score 3.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lexspot/](https://apis.io/providers/lexspot/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for LexSpot: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lexspot/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
